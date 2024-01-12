@@ -1,0 +1,15 @@
+body {
+    margin: 20%;
+}
+
+#Clickme {
+    background-color: black;
+    color: white;
+    font-size: 3em;
+}
+
+#NoClickme {
+    background-color: yellow;
+    color: black;
+    font-size: 3em;
+}

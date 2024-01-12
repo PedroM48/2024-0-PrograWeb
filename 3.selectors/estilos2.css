@@ -1,0 +1,29 @@
+#top {
+    background-color: orange;
+    margin-right: 0%;
+}
+
+#logo {
+    width: 500px;
+}
+
+#contenido {
+    border: black 10px solid;
+}
+
+#machupicchu {
+    margin-top: 15px;
+    width: 150px;
+}
+
+#images {
+    padding-bottom: 10px;
+}
+
+#image1 {
+    width: 300px;
+}
+
+#image2 {
+    width: 300px;
+}
