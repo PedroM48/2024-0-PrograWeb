@@ -1,67 +1,77 @@
 <html>
     <head>
         <title>Ejercicio de Bootstrap Grid</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="estilos.css">
     </head>
     <body>
         <div id="content">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/ULIMA_logo.png"  align="center"/>
-            <h1>Sobre Nosotros</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/ULIMA_logo.png"/>
+            <h1 id="Us">Sobre Nosotros</h2>
             <p id="parrafo">Ulima Social es una iniciativa que quiere mejorar la comunidad mediante la ejecución de <i>proyectos prácticos</i> que permitan solucionar problemas. Es un lugar donde se juntan gente creativa, alrededor de grandes ideas.</p>
-            <h2>Projectos</h2>
-            <ul>
-                <li>Más Buscados</li>
+            <div id="row" class="row">
+                <div id="cronog" class="col">
+                    <h2>Cronograma</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Hora</th>
+                                <th>Tema</th>
+                            </tr>
+                        </thead> 
+                        <tbody>
+                            <tr>
+                                <td>18:00 - 20:30</td>
+                                <td>Registro</td>
+                            </tr>
+                            <tr>
+                                <td>20:30 - 23:00</td>
+                                <td>Charla</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2>Regístrate!</h2>
+                        <Label>Nombre:</Label>  
+                        <input type="text"/>
+                        <br/>
+                        <Label>Email:</Label>  
+                        <input type="email"/>
+                        <br/>
+                        <label>Lugar:</label> 
+                        <select>
+                            <option value="lima">Lima</option>
+                            <option value="arequipa">Arequipa</option>
+                        </select>
+                        <br/>
+                        <label name="genero">Género:</label> 
+                        <input type="radio" name="genero" value="masculino"> <label for="masculino">Masculino</label>
+                        <input type="radio" name="genero" value="femenino"> <label for="femenino">Femenino</label>
+                        <br/>
+                        <label>Experiencia:</label>
+                        <br/>
+                        <textarea rows="2" cols="20"></textarea>
+                        <br/>
+                        <input id="boton" type="button" value="Registrarse"/>
+                </div>
+                <div id="project" class="col">
+                    <h2>Projectos</h2>
                     <ul>
-                        <li><a href="/guia1_html/2024-0_html-css-ejercicios/1.html/solucion/index.html">Flying ducks</a></li>
-                        <li><a href="/guia1_html/2024-0_html-css-ejercicios/1.html/solucion/index.html">Kitty kitty kitty</a></li>
+                        <li>Más Buscados</li>
+                            <ul>
+                                <li><a href="/guia1_html/2024-0_html-css-ejercicios/1.html/solucion/index.html">Flying ducks</a></li>
+                                <li><a href="/guia1_html/2024-0_html-css-ejercicios/1.html/solucion/index.html">Kitty kitty kitty</a></li>
+                            </ul>
+                        <li>Últimos</li>
+                        <ul>
+                            <li><a href="/guia1_html/2024-0_html-css-ejercicios/1.html/solucion/index.html">Avengers against Climate Change</a></li>
+                            <li><a href="/guia1_html/2024-0_html-css-ejercicios/1.html/solucion/index.html">Facedog</a></li>
+                        </ul>
                     </ul>
-                <li>Últimos</li>
-                <ul>
-                    <li><a href="/guia1_html/2024-0_html-css-ejercicios/1.html/solucion/index.html">Avengers against Climate Change</a></li>
-                    <li><a href="/guia1_html/2024-0_html-css-ejercicios/1.html/solucion/index.html">Facedog</a></li>
-                </ul>
-            </ul>
-            <h2>Cronograma</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Hora</th>
-                        <th>Tema</th>
-                    </tr>
-                </thead> 
-                <tbody>
-                    <tr>
-                        <td>18:00 - 20:30</td>
-                        <td>Registro</td>
-                    </tr>
-                    <tr>
-                        <td>20:30 - 23:00</td>
-                        <td>Charla</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h2>Regístrate!</h2>
-                <label>Nombre:</label> 
-                <input type="text"/> 
-                <br/>
-                <label>Email:</label> 
-                <input type="email"/>
-                <br/>
-                <label>Lugar:</label> 
-                <select>
-                    <option value="lima">Lima</option>
-                    <option value="arequipa">Arequipa</option>
-                </select>
-                <br/>
-                <label name="genero">Género:</label> 
-                    <input type="radio" name="genero" value="masculino"> <label for="masculino">Masculino</label>
-                    <input type="radio" name="genero" value="femenino"> <label for="femenino">Femenino</label>
-                <br/>
-                <label>Experiencia:</label>
-                <br/>
-                <textarea rows="2" cols="20"></textarea>
-                <br/>
-                <input id="boton" type="button" value="Registrarse"/>
+                </div>
+            </div>
         </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>        
     </body>
 </html>

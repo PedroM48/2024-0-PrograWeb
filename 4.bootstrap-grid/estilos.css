@@ -8,13 +8,65 @@ html {
 #content {
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
+    border-bottom: #66401A 10px solid;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#us {
+    margin-top: 25px;
+}
+
+#parrafo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.45em;
 }
 
 h1, h2 {
     color: #66401A;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia;
+    font-weight: bold;
+}
+
+#row {
+    margin-top: 40px;
+}
+
+#cronog {
+    width: 700px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+}
+
+td, thead {
+    border: 1px black solid;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#project {
+    width: 200px;    
+    height: 300px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1em;
+    background-color: #EFE1C6;
+    padding: 10px;
+    border: 1px #66401A solid;
+    margin-right: 2%; 
+    margin-left: 45%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 i {
@@ -22,7 +74,29 @@ i {
     text-decoration: underline;
 }
 
+label {
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+}
+
+input {
+    display: inline-block;
+    font-weight: bold;
+    background-color: #EFE1C6;
+}
+
 #boton {
     margin-top: 5px;
     margin-bottom: 5px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 0.8em;
+    border: gainsboro 1px solid;
+}
+
+a {
+    color: blue;
+    text-decoration: underline;
 }
